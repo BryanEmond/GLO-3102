@@ -1,60 +1,135 @@
 body {
     height: 100vh;
 }
-header{
+
+header {
     height: 5%;
     width: 100%;
     display: inline-flex;
 }
-p{
-    display: inline;
-}
-button{
+
+button {
     height: 50px;
     width: 50px;
     border: 1px solid #ccc;
     background-color: white;
 }
-button:hover{
+
+button:hover {
     border: 1px solid black;
 }
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 nav {
     height: 100%;
     width: 100%;
     justify-content: center;
     display: flex;
 }
-.nav-bar {
-    margin-top: 1%;
-    height: 50%;
-    width: 45%;
-    border-radius: 20px;
-    text-align: center;
-}
-.menu-container{
-    
+
+.menu-container {
     width: 100%;
     height: calc(100vh - 7%);
 }
-.menu-item{
-    margin-top: 2%;
-    margin-left: 2%;
-    padding: 1%;
-    height: 18%;
-    width: 45%;
-    display: inline-block; 
-    border: 1px solid #ccc;
-} 
-.menu-item:hover{
-    border: 1px solid #000;
-} 
+
 .name {
     margin-top: 1%;
     margin-left: 1%;
     font-weight: bold;
-    font-size:xx-large;
+    font-size: xx-large;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .name {
+        margin-top: 1%;
+        margin-left: 1%;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .nav-bar {
+        margin-top: 1%;
+        height: 50%;
+        width: 60%;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .img-primary{
+        width: 100%;
+        height: auto;
+    }
+    .menu-item {
+        margin-top: 2%;
+        margin-left: 2%;
+        padding: 1%;
+        width: 90% !important;
+        border: 1px solid #ccc;
+    }
+    .menu-item:hover {
+        border: 1px solid #000;
+    }
+}
+@media (max-width: 1024px) {
+    .name {
+        margin-top: 1%;
+        margin-left: 1%;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    .nav-bar {
+        margin-top: 1%;
+        height: 50%;
+        width: 50%;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .img-primary {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-item {
+        margin-top: 2%;
+        margin-left: 2%;
+        padding: 1%;
+        width: 45%;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+
+    .menu-item:hover {
+        border: 1px solid #000;
+    }
+}
+
+@media (min-width: 1025px) {
+    img {
+        max-height: 100%;
+        width: auto;
+    }
+    .nav-bar {
+        margin-top: 1%;
+        height: 50%;
+        width: 45%;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .menu-item {
+        margin-top: 2%;
+        margin-left: 2%;
+        padding: 1%;
+        height: 18% ;
+        width: 45%  ;
+        display: inline-flex;
+        border: 1px solid #ccc;
+    }
+    p{
+        display: inline;
+    }
+    .menu-item:hover {
+        border: 1px solid #000;
+    }
 }
