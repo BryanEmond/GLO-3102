@@ -1,2 +1,3 @@
-Numéro d'identification (NI): 536916138
-Courriel: bryan.emond-blais.1@ulaval.ca
+Bryan:
+    Numéro d'identification (NI): 536916138
+    Courriel: bryan.emond-blais.1@ulaval.ca
