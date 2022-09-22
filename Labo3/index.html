@@ -7,14 +7,10 @@
     </head>
     <body>
         <input type="text" id="toastInput"/>
-        <select id="toastType">
-            <option value="Info">Info</option>
-            <option value="Success">Success</option>
-            <option value="Error">Error</option>
-        </select>
-        <input type="button" value="Notify" id="btnNotification">
+        <input type="button" value="Success" class="btnNotification" data-type="Success">
+        <input type="button" value="Info" class="btnNotification" data-type="Info">
+        <input type="button" value="Error" class="btnNotification" data-type="Error">
         <div id="toastContainer">
-
         </div>
     </body>
 </html>

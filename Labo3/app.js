@@ -1,10 +1,11 @@
 import { Toast } from "./toast.js";
 const toastType = document.getElementById("toastType");
 const toastInput = document.getElementById("toastInput");
-document.getElementById("btnNotification").addEventListener("click",(e)=>{
+[...document.getElementsByClassName("btnNotification")].forEach(btn =>{
+    btn.addEventListener("click",(e)=>{
     if(toastInput.value !== ""){
         const toast = new Toast(
-            toastType.value,
+            e.target.dataset.type,
             toastInput.value,
             document.getElementById("toastContainer")
         )
@@ -12,3 +13,4 @@ document.getElementById("btnNotification").addEventListener("click",(e)=>{
     }
    
 });
+})
